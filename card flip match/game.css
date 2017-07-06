@@ -1,0 +1,20 @@
+div#memory{
+	background: #ccc;
+	width:800px;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+}
+div#memory > div{
+	border:#000 1px solid;
+	width:71px;
+	height:71px;
+	float:left;
+	margin: 10px;
+	padding:20px;
+	font-size: 64px;
+	cursor:pointer;
+	text-align: center;
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuMUOAM4DbZFHiLm1WCHPKMg1A14PbG_NZW6IknbpzQNdkBcj") no-repeat;
+	background-size: cover;
+}
