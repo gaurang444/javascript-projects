@@ -1,0 +1,15 @@
+body{
+	margin-top: 70px;
+	background: #333;
+	color: white;
+}
+.container{
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.card{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+
