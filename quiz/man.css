@@ -32,3 +32,27 @@ input{
 	padding-left: 5px;
 
 }
+button{
+	background: green;
+	border:none;
+	border-radius: 5px;
+	padding: 10px;
+	color:white;
+	margin-top:5px;
+	transition-duration: .5s;
+}
+button:hover{
+	border:1px solid green;
+	background: white;
+	color:black;
+	cursor: pointer;
+
+}
+#pic{
+	width:375px;
+	height:245px;
+
+}
+body{
+	background: aqua;
+}
