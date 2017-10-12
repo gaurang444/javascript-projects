@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Color Viewer</title>
+	<style>
+		.input-wrapper {
+			display: flex;
+		}
+		input[type="text"] {
+			width: 300px;
+			height: 42px;
+			font-size: 20px;
+			padding: 5px;
+			outline: none;
+			opacity: .7;
+		}
+		button {
+			outline: none;
+			cursor: pointer;
+			font-size: 20px;
+			width: 100px;
+			height: 56px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="input-wrapper">
+		<input type="text">
+		<button>SUBMIT</button>
+	</div>
+
+	<script>
+		document.querySelector('button').addEventListener('click', function(){
+			var theme_input = document.querySelector('input');
+			if (theme_input.value == "") {
+				theme_input.style.borderColor = "red";
+			} else {
+				theme_input.style.borderColor = "#ddd";
+				localStorage.setItem('theme', theme_input.value);
+				window.location.reload();
+			}
+		});
+		document.body.style.backgroundColor = localStorage.getItem('theme');
+	</script>
+</body>
+</html>

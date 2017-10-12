@@ -1,0 +1,16 @@
+#left_side {
+	height: 500px;
+	width: 500px;
+	position: absolute;
+}
+#right_side {
+	width: 500px;
+	height: 500px;
+	left: 500px;
+	border-left: 1px solid #000;
+	position: absolute;
+}
+img{
+	position: absolute;
+	cursor: pointer;
+}
