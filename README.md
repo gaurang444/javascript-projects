@@ -37,4 +37,3 @@ New Additons and improvements Welcome:)<br><br><br><br>
 <img src="https://image.ibb.co/hB6BBG/face.png">
 <img src="https://image.ibb.co/c52q5b/convertor.png">
 <img src="https://image.ibb.co/nddrBG/quiz.png">
-<img src="https://preview.ibb.co/cbwL5b/working_project.png">
