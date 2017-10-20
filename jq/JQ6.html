@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image Slider</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bs/bootstrap.min.css" />
+<script src="bs/jquery-2.2.0.min.js"></script>
+<script src="bs/bootstrap.js"></script>
+
+     
+
+<style>
+  img
+  {
+	  padding: 10px;
+	  background-color:#FFF;
+	  //border:1px solid #999;
+	  position:absolute;
+  }
+</style>
+<script src="js/jquery-2.2.0.js"></script>
+<script>
+  var arr = ['a.jpg','b.jpg','c.jpg','d.jpg','e.jpg','f.jpg','g.jpg'];
+  var sw,x1,x2,x3,pos1=0,pos2=1,pos3=2,pos4=3;
+  $(function(e)
+  {
+	  sw = $(document).innerWidth();
+	  x1 = (sw - 1010)/2;
+	  x2 = (sw - 470)/2;      
+	  x3 = (sw + 470)/2;
+	  $('#i1').css('width',250);
+	  $('#i1').css('height',100);
+	  $('#i1').css('left',x1);
+	  $('#i1').attr('src','imagesN/a.jpg');
+	  $('#i2').css('width',450);
+	  $('#i2').css('height',200);
+	  $('#i2').css('left',x2);
+	  $('#i2').attr('src','imagesN/b.jpg');
+	  $('#i3').css('width',250);
+	  $('#i3').css('height',100);
+	  $('#i3').css('left',x3);
+	  $('#i3').attr('src','imagesN/c.jpg');
+	  setInterval(slider,4000);
+  });
+  function slider(e)
+	  {
+		  //alert("Hello");
+		  $('<img id="i4">').appendTo('div#dd');
+		  $('#i4').attr('src','imagesN/'+ arr[pos4]);
+	  	  $('#i4').css( { 'opacity':0 , 'left': x3 ,'width' : 250 ,'height' : 100});
+		  $('#i1').animate({'opacity':0},2000);
+		  $('#i2').animate({'left':x1,'width':250,'height':100},2000);
+		  $('#i3').animate({'left':x2,'width':450,'height':200},2000);
+		  $('#i4').animate({'opacity':1},2100,function(e)
+		  {
+			$('#i1').remove();
+	  	    $('#i2').attr('id','i1');
+	  	    $('#i3').attr('id','i2');
+	  	    $('#i4').attr('id','i3');
+	  	     pos1 = pos2;
+			 pos2 = pos3;
+			 pos3 = pos4;
+			 pos4 = (pos4 + 1) % arr.length;
+		  });
+	  }
+</script>
+</head>
+<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header"  style="padding-top:0px; margin:0px;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+      <a class="navbar-brand" href="#myPage"><!--img src="images/logo_white2.png" style="position:absolute; top:2px; height:55px"--></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">ABOUT US</a></li>
+        <li><a href="#tour">EVENTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="jj.html">Registration</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div style="background-color:#FFF; width:100%; height:30px">
+</div>
+
+ <div class="container-fluid" style="position:relative" id="dd">
+ <div class="container-fluid">
+  <img id="i1" class="img-responsive"></div>
+   <div class="container-fluid">
+  <img id="i2" class="img-responsive"></div>
+   <div class="container-fluid">
+  <img id="i3" class="img-responsive"></div>
+  </div>
+ </body>
+</html>
+
