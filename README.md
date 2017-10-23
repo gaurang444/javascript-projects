@@ -1,5 +1,5 @@
 # javascript-projects
-<h2>Theses are js,jquery projects done by me.New additions welcome:)</h2>
+<h2>These are js,jquery projects done by me.New additions welcome:)</h2>
 
 1)Acceessing web cam<br>
 2)Calculator in js<br>
@@ -13,7 +13,7 @@
 10) Weather App<br>
 
 <h2>Contributing guide</h2>
-Just fork the repo in your machine<br>
+Just fork the repo on your machine<br>
 Clone the repo in desktop<br>
 Add the project or improve the existing features<br>
 Update the README file with screenshot(in the given format).
