@@ -11,8 +11,6 @@
 8)A simple quiz in js<br>
 9)seven segemnt digital clock<br>
 10) Weather App<br>
-11) WikipediaViewer<br>
-12) RandomQuote <br>
 
 <h2>Contributing guide</h2>
 Just fork the repo in your machine<br>
@@ -41,5 +39,3 @@ New Additons and improvements Welcome:)<br><br><br><br>
 <img src="https://image.ibb.co/c52q5b/convertor.png">
 <img src="https://image.ibb.co/nddrBG/quiz.png">
 <img src="https://image.ibb.co/eSqeYw/weather.png">
-<img src="https://ibb.co/k21NRR">
-<img src="https://i.imgur.com/wtlDyyM.png">
