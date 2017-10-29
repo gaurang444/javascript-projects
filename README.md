@@ -1,5 +1,5 @@
 # javascript-projects
-<h2>Theses are js,jquery projects done by me.New additions welcome:)</h2>
+<h2>These are js,jquery projects done by me.New additions welcome:)</h2>
 
 1)Acceessing web cam<br>
 2)Calculator in js<br>
